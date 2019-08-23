@@ -1,0 +1,13 @@
+{
+  "text":
+  {
+    "minLength":     1,
+    "maxLength":     9216
+  },
+
+  "password":
+  {
+    "minLength":     8,
+    "maxLength":     2048
+  }
+}
