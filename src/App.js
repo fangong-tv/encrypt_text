@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.scss';
+import ETMain from 'component/ETMain';
 
 function App() {
   return (
-    <p>test</p>
+    <ETMain />
   );
 }
 
