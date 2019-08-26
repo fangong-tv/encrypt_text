@@ -44,6 +44,7 @@ class ETError extends Error
     }
 
     message = String(message);
+    super(message);
     code    = String(code);
 
     // V8
@@ -52,7 +53,6 @@ class ETError extends Error
     }
 
     // Assignment
-    super(message);
     this.code      = code;
     this.previous  = previous;
   }
@@ -65,8 +65,7 @@ class ETError extends Error
     }
     else
     {
-      return (`${this.constructor.name}: ${this.message} / ${this.code}` + '\n' +
-              this.previous);
+      return (`${this.constructor.name}: ${this.message} / ${this.code}\n` + this.previous);
     }
   }
 

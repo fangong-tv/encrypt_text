@@ -3,6 +3,7 @@ import './index.scss';
 import config from 'config.json';
 import ui     from 'ui.json';
 import Hero from 'react-bulma-components/lib/components/hero';
+import Container from 'react-bulma-components/lib/components/container';
 import Heading from 'react-bulma-components/lib/components/heading';
 import ETForm from 'component/ETForm';
 
@@ -15,12 +16,15 @@ export default class ETMain extends React.Component
         <Hero.Head renderAs="header" className="etmain_header has-background-grey-darker has-text-centered">
           <Heading size="4" weight="normal">{ui.appName}</Heading>
         </Hero.Head>
-        <ETForm />
+        <Hero.Body>
+          <Container>
+            <ETForm />
+          </Container>
+        </Hero.Body>
         <Hero.Footer renderAs="footer" className="etmain_footer has-background-grey-darker has-text-centered">
           <p>{ui.donation}: {config.donation.bitcoin}</p>
         </Hero.Footer>
       </Hero>
     );
   }
-
 };

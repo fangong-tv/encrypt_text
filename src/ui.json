@@ -1,4 +1,30 @@
 {
   "appName":  "Text Encryptor",
-  "donation": "Donation (Bitcoin)"
+  "donation": "Donation (Bitcoin)",
+
+  "form":
+  {
+    "text":
+    {
+      "label": "Text",
+      "help":  "Max. 9216 characters",
+      "placeholder": "Encrypt your message and share it within an untrustworthy environment."
+    },
+
+    "password":
+    {
+      "label": "Password",
+      "help":  "Min. 8 / Max. 2048 characters"
+    },
+
+    "buttonEncrypt":
+    {
+      "label": "Encrypt"
+    },
+
+    "buttonDecrypt":
+    {
+      "label": "Decrypt"
+    }
+  }
 }

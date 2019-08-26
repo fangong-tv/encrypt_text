@@ -1,6 +1,6 @@
 {
-  "short_name": "Encrypt Text",
-  "name": "Encrypt Text",
+  "short_name": "Text Encryptor",
+  "name": "Text Encryptor",
   "icons": [
     {
       "src": "favicon.ico",
